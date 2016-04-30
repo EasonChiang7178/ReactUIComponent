@@ -4,7 +4,7 @@ var path = require('path'),
 
 module.exports = {
   entry: {
-    bundle: './assets/js/app.js',
+    bundle: './assets/main.js',
   },
 
   output: {
@@ -18,7 +18,7 @@ module.exports = {
     loaders: [
       /* ----- JavaScript Loader ----- */
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/,
         loader: 'babel-loader',
         query: {
@@ -53,6 +53,6 @@ module.exports = {
     new ExtractTextPlugin('./[name].css'),
   ],
   resolve: {
-    extensions: ['', '.js', '.json', '.scss'],
+    extensions: ['', '.js', '.jsx', '.json', '.scss'],
   }
 };
