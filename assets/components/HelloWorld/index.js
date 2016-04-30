@@ -1,1 +1,1 @@
-export { default } from './jsx/HelloWorld';
+export { default } from './HelloWorld.jsx';
