@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { HelloWorld } from './components';
+import { StepperInput } from './components';
+import { StepperInputContainer } from './containers';
 
 ReactDOM.render(
-  <HelloWorld message='here is the whole new world!'/>,
+  <StepperInputContainer defaultValue="10" />,
   document.getElementById('entry-point')
 );
